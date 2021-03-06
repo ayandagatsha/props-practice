@@ -2,7 +2,22 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <div>
+    <h1 className="heading">My Contacts</h1>
+
+    <App
+      name="Beyonce"
+      imgURL="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
+      phone="+123 456 789"
+      email="b@beyonce.com"
+    />
+    <App name="" src="" tel="" email="" />
+
+    <App name="" src="" tel="" email="" />
+  </div>,
+  document.getElementById("root")
+);
 
 //1. Apply CSS styles to App.jsx component
 //to match the appearance on the completed app:
